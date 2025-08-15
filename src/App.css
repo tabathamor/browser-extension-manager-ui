@@ -1,42 +1,84 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+@import "tailwindcss";
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+/* Load local fonts */
+@layer base {
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+  /* Variable regular */
+  @font-face {
+    font-family: "Noto Sans";
+    src: url("./assets/fonts/NotoSans-VariableFont_wdth,wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-stretch: 75% 125%;
+    font-style: normal;
+    font-display: swap;
   }
-  to {
-    transform: rotate(360deg);
+
+  /* Variable italic */
+  @font-face {
+    font-family: "Noto Sans";
+    src: url("./assets/fonts/NotoSans-Italic-VariableFont_wdth,wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-stretch: 75% 125%;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  /* Optional static fallbacks */
+  @font-face {
+    font-family: "Noto Sans";
+    src: url("./assets/fonts/static/NotoSans-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Noto Sans";
+    src: url("./assets/fonts/static/NotoSans-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Noto Sans";
+    src: url("./assets/fonts/static/NotoSans-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
+/* Tailwind v4 tokens */
+@theme {
+  /* Fonts */
+  --font-sans: "Noto Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-noto: "Noto Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-poppins: "Poppins", ui-sans-serif, system-ui, sans-serif;
 
-.card {
-  padding: 2em;
-}
+  --color-neutral-900: oklch(0.22 0.082 267);
+  --color-neutral-800: oklch(0.27 0.032 271);
+  --color-neutral-700: oklch(0.34 0.039 270);
+  --color-neutral-600: oklch(0.46 0.027 272);
+  --color-neutral-300: oklch(0.83 0.000 90);
+  --color-neutral-200: oklch(0.91 0.029 260);
+  --color-neutral-100: oklch(0.95 0.000 90);
+  --color-neutral-0: oklch(0.99 0.003 229);
 
-.read-the-docs {
-  color: #888;
+  --color-red-400: oklch(0.67 0.186 26);
+  --color-red-500: oklch(0.61 0.189 27);
+  --color-red-700: oklch(0.53 0.199 29);
+
+  /* Gradients */
+  --gradient-light-start: oklch(0.96 0.015 257);
+  /* #EBF2FC */
+  --gradient-light-end: oklch(0.97 0.011 204);
+  /* #EEF8F9 */
+  --gradient-dark-start: oklch(0.14 0.034 265);
+  /* #040918 */
+  --gradient-dark-end: oklch(0.22 0.084 267);
+  /* #091540 */
+
+  --gradient-light: linear-gradient(180deg, var(--gradient-light-start) 0%, var(--gradient-light-end) 100%);
+  --gradient-dark: linear-gradient(180deg, var(--gradient-dark-start) 0%, var(--gradient-dark-end) 100%);
 }
