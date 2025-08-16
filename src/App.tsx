@@ -1,11 +1,16 @@
 
 import './App.css'
+import { Header } from './components/Header'
+
 
 function App() {
 
   return (
     <>
-      <h1 className='bg-red-500'>Hola</h1>
+      <section>
+        <Header />
+      </section>
+
     </>
   )
 }
