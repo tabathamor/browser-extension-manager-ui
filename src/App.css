@@ -81,4 +81,7 @@
 
   --gradient-light: linear-gradient(180deg, var(--gradient-light-start) 0%, var(--gradient-light-end) 100%);
   --gradient-dark: linear-gradient(180deg, var(--gradient-dark-start) 0%, var(--gradient-dark-end) 100%);
+
+  --radius-lg: 20px;
+  --radius-sm: 10px;
 }
