@@ -56,18 +56,59 @@
   --font-noto: "Noto Sans", ui-sans-serif, system-ui, sans-serif;
   --font-poppins: "Poppins", ui-sans-serif, system-ui, sans-serif;
 
-  --color-neutral-900: oklch(0.22 0.082 267);
-  --color-neutral-800: oklch(0.27 0.032 271);
-  --color-neutral-700: oklch(0.34 0.039 270);
-  --color-neutral-600: oklch(0.46 0.027 272);
-  --color-neutral-300: oklch(0.83 0.000 90);
-  --color-neutral-200: oklch(0.91 0.029 260);
-  --color-neutral-100: oklch(0.95 0.000 90);
-  --color-neutral-0: oklch(0.99 0.003 229);
+  --text-preset-1: 34px;
+  --text-preset-1--line-height: 100%;
+  --text-preset-1--letter-spacing: -1px;
 
-  --color-red-400: oklch(0.67 0.186 26);
-  --color-red-500: oklch(0.61 0.189 27);
-  --color-red-700: oklch(0.53 0.199 29);
+  --text-preset-2: 20px;
+  --text-preset-2--line-height: 120%;
+  --text-preset-2--letter-spacing: -0.2px;
+
+  --text-preset-3: 20px;
+  --text-preset-3--line-height: 140%;
+  --text-preset-3--letter-spacing: -0.3px;
+
+  --text-preset-4: 20px;
+  --text-preset-4--line-height: 140%;
+  --text-preset-4--letter-spacing: -0.3px;
+
+  --text-preset-5: 16px;
+  --text-preset-5--line-height: 140%;
+  --text-preset-5--letter-spacing: -0.5px;
+
+  --text-preset-6: 16px;
+  --text-preset-6--line-height: 140%;
+  --text-preset-6--letter-spacing: -0.5px;
+
+  --spacing-0: 0;
+  --spacing-025: 2px;
+  --spacing-050: 4px;
+  --spacing-075: 6px;
+  --spacing-100: 8px;
+  --spacing-125: 10px;
+  --spacing-150: 12px;
+  --spacing-200: 16px;
+  --spacing-250: 20px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-800: 64px;
+  --spacing-1000: 80px;
+
+
+
+  --color-neutral-900: #091540;
+  --color-neutral-800: #202535;
+  --color-neutral-700: #2F364B;
+  --color-neutral-600: #535868;
+  --color-neutral-300: #C6C6C6;
+  --color-neutral-200: #D6E2F5;
+  --color-neutral-100: #EEEEEE;
+  --color-neutral-0: #FBFDFE;
+  --color-red-400: #C7231A;
+  --color-red-500: #DE4840;
+  --color-red-700: #F25C54;
 
   /* Gradients */
   --gradient-light-start: oklch(0.96 0.015 257);

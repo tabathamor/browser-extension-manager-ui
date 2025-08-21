@@ -6,4 +6,3 @@ export type Extension = {
     active: boolean
 }
 
-export type Filter = "all" | "active" | "inactive"
