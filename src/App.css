@@ -49,6 +49,20 @@
   }
 }
 
+@layer utilities {
+  .bg-gradient-light {
+    background-image: var(--gradient-light);
+  }
+
+  .bg-gradient-dark {
+    background-image: var(--gradient-dark);
+  }
+
+  .shadow-inset-1 {
+    box-shadow: inset 0 0 0 1px var(--tw-shadow-color);
+  }
+}
+
 /* Tailwind v4 tokens */
 @theme {
   /* Fonts */
@@ -96,8 +110,6 @@
   --spacing-800: 64px;
   --spacing-1000: 80px;
 
-
-
   --color-neutral-900: #091540;
   --color-neutral-800: #202535;
   --color-neutral-700: #2F364B;
@@ -111,17 +123,14 @@
   --color-red-700: #F25C54;
 
   /* Gradients */
-  --gradient-light-start: oklch(0.96 0.015 257);
-  /* #EBF2FC */
-  --gradient-light-end: oklch(0.97 0.011 204);
-  /* #EEF8F9 */
-  --gradient-dark-start: oklch(0.14 0.034 265);
-  /* #040918 */
-  --gradient-dark-end: oklch(0.22 0.084 267);
-  /* #091540 */
+  --gradient-light-start: #EBF2FC;
+  --gradient-light-end: #EEF8F9;
+  --gradient-dark-start: #040918;
+  --gradient-dark-end: #091540;
 
   --gradient-light: linear-gradient(180deg, var(--gradient-light-start) 0%, var(--gradient-light-end) 100%);
   --gradient-dark: linear-gradient(180deg, var(--gradient-dark-start) 0%, var(--gradient-dark-end) 100%);
+
 
   --radius-lg: 20px;
   --radius-sm: 10px;

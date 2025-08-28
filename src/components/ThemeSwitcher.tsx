@@ -1,7 +1,7 @@
 import React from 'react'
 import { useTheme } from '../theme/Themeprovider'
-import IconSun from "../assets/images/icon-sun.svg"
-import IconMoon from "../assets/images/icon-moon.svg"
+import IconSun from "../../public/images/icon-sun.svg"
+import IconMoon from "../../public/images/icon-moon.svg"
 
 export const ThemeSwitcher = () => {
     const { theme, toggle } = useTheme()
