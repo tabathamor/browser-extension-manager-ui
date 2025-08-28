@@ -17,9 +17,9 @@ const FILTERS: Filter[] = ["all", "active", "inactive"];
 export const FilterBar: React.FC<Props> = ({ value, onChange, counts }) => {
     const { theme } = useTheme();
     return (
-        <div className='flex justify-between mt-800'>
-            <p className={`font-bold text-preset-1 ${theme === 'dark' ? 'text-neutral-900' : 'text-neutral-0'} `}>Extensions List</p>
-            <div className="flex gap-2">
+        <div className='flex flex-col  mt-500 mb-500 md:flex-row md:justify-between lg:mt-800 lg:mb-400 '>
+            <p className={`font-bold text-center text-preset-1 mb-300 md: ${theme === 'dark' ? 'text-neutral-900' : 'text-neutral-0'} `}>Extensions List</p>
+            <div className="flex place-content-center gap-2">
                 {FILTERS.map(f => {
                     const active = value === f;
 
@@ -29,12 +29,12 @@ export const FilterBar: React.FC<Props> = ({ value, onChange, counts }) => {
                             type="button"
                             onClick={() => onChange(f)}
                             aria-pressed={active}
-                            className={`px-4 rounded-lg text-preset-4 transition 
-                                ${active
-                                    ? ` text-preset-4 ${theme === 'dark' ? 'bg-red-700 text-neutral-0' : 'dark:bg-red-400 dark:text-neutral-900'}`
-                                    : ` text-preset-3 ${theme === 'dark'
-                                        ? 'bg-neutral-700 dark:text-neutral-0 dark:border-neutral-600'
-                                        : 'bg-neutral-0 text-neutral-700 border-neutral-200'
+                            className={`w-[95px] h-[46px] px-4 rounded-lg text-preset-4 transition
+        ${active
+                                    ? `${theme === 'dark' ? 'bg-red-400 text-neutral-0' : 'bg-red-700 text-neutral-900'}`
+                                    : `${theme === 'dark'
+                                        ? 'bg-neutral-0 text-neutral-700 border border-neutral-200'
+                                        : 'bg-neutral-700 text-neutral-0 border border-neutral-600'
                                     }`
                                 }`}
                         >
